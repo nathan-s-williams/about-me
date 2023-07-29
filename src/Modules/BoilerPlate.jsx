@@ -1,7 +1,7 @@
 import Navbar from "./Navbar.jsx";
 import Footer from "./Footer.jsx";
 
-function App({content}) {
+function BoilerPlate({content}) {
     return (
         <div className='flex flex-col min-h-screen'>
             <Navbar />
@@ -11,4 +11,4 @@ function App({content}) {
     );
 }
 
-export default App
+export default BoilerPlate
