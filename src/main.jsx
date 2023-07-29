@@ -1,10 +1,11 @@
 import React from 'react'
 import ReactDOM from 'react-dom/client'
-import App from './Modules/App.jsx'
+import BoilerPlate from './Modules/BoilerPlate.jsx'
+import Homepage from './Modules/Homepage.jsx'
 import './index.css'
 
 ReactDOM.createRoot(document.getElementById('root')).render(
     <React.StrictMode>
-        <App/>
+        <BoilerPlate content={<Homepage />} />
     </React.StrictMode>,
 )
