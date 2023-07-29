@@ -1,16 +1,14 @@
 import Navbar from "./Navbar.jsx";
 import Footer from "./Footer.jsx";
 
-function App() {
+function App({content}) {
     return (
         <div className='flex flex-col min-h-screen'>
             <Navbar />
-            <div>
-                Home page content..
-            </div>
+            {content}
             <Footer />
         </div>
-    )
+    );
 }
 
 export default App
