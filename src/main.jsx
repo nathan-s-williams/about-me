@@ -7,7 +7,9 @@ import Career from './Modules/PageContent/Career.jsx';
 import School from './Modules/PageContent/School.jsx';
 import Hobbies from './Modules/PageContent/Hobbies.jsx';
 import Contact from './Modules/PageContent/Contact.jsx';
+import ErrorPage from "./Modules/PageContent/ErrorPage.jsx";
 import './index.css'
+
 
 const router = createBrowserRouter([
     {
@@ -18,8 +20,9 @@ const router = createBrowserRouter([
             { path: 'career', element: <Career /> },
             { path: 'school', element: <School /> },
             { path: 'hobbies', element: <Hobbies /> },
-            { path: 'contact', element: <Contact /> }
+            { path: 'contact', element: <Contact /> },
         ],
+        errorElement: <ErrorPage />,
     },
 ]);
 
