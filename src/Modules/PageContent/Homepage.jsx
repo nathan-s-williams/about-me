@@ -1,4 +1,4 @@
-import reactLogo from '../../assets/react.svg'
+import reactLogo from '../../Assets/react.svg'
 import Paper from '@mui/material/Paper'
 function Homepage() {
     return (
@@ -10,7 +10,7 @@ function Homepage() {
                 </p>
             </article>
             <Paper className='shrink-0' elevation={8} sx={{borderRadius:5}}>
-                <img className='w-[400px] h-fit' src={reactLogo} alt='Nathan Williams'></img>
+                <img className='w-[400px] h-fit' src={reactLogo} alt='Nathan Williams' />
             </Paper>
 
         </div>
