@@ -1,6 +1,6 @@
-import reactLogo from '../../Assets/react.svg';
 import { Link } from "react-router-dom";
 import { Card, CardMedia, CardContent, Paper } from '@mui/material';
+import OutlinedButton from '../Modules/Buttons/OutlinedButton.jsx'
 import CallIcon from '@mui/icons-material/Call';
 import EmailIcon from '@mui/icons-material/Email';
 import LinkedInIcon from '@mui/icons-material/LinkedIn';
@@ -35,8 +35,9 @@ function Contact() {
     ]
 
     return (
-        <div className='flex justify-center items-center gap-36 w-screen h-fit'>
-            <div className='flex flex-col gap-10 mt-10 mb-10 min-w-fit'>
+        <div className='flex flex-col items-center w-screen h-screen'>
+            <p className='italic text-3xl'>Please reach out and say... <span className='text-5xl'>Hi!</span></p>
+            <div className='flex gap-10'>
                 {contacts.map((contact) => {
                     return <Card sx={{maxWidth: '345'}} key={contact.name} variant='outlined'>
                         <CardMedia
@@ -44,6 +45,7 @@ function Contact() {
                                 display: 'flex',
                                 justifyContent: 'center',
                                 alignItems: 'center',
+                                width: '15rem',
                                 height: '10rem',
                                 backgroundColor: '#faf9f6'
                             }}
@@ -51,16 +53,17 @@ function Contact() {
                         </CardMedia>
                         {contact.textType === 'link' ?
                             <CardContent className='flex justify-center'>
-                                <Link to={contact.contactDetails}>{contact.name}</Link>
+                                <OutlinedButton
+                                    name={contact.name}
+                                    link={contact.contactDetails}
+                                    color='black'
+                                    borderColor='black'
+                                />
                             </CardContent>
                             :
                             <CardContent className='flex flex-col items-center'>
-                                <div>
-                                    {contact.name}
-                                </div>
-                                <div>
-                                    {contact.contactDetails}
-                                </div>
+                                <div>{contact.name}</div>
+                                <div>{contact.contactDetails}</div>
                             </CardContent>
                         }
                     </Card>

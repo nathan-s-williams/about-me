@@ -1,4 +1,4 @@
-import reactLogo from '../../Assets/react.svg'
+import reactLogo from '../Assets/react.svg'
 import Paper from '@mui/material/Paper'
 function Homepage() {
     return (

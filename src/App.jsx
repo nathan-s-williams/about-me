@@ -2,13 +2,13 @@ import React from 'react';
 import ReactDOM from 'react-dom/client';
 import { createBrowserRouter, RouterProvider } from 'react-router-dom';
 import BoilerPlate from './Modules/BoilerPlate.jsx';
-import Homepage from './Modules/PageContent/Homepage.jsx';
-import Career from './Modules/PageContent/Career.jsx';
-import School from './Modules/PageContent/School.jsx';
-import Hobbies from './Modules/PageContent/Hobbies.jsx';
-import Contact from './Modules/PageContent/Contact.jsx';
-import ErrorPage from "./Modules/PageContent/ErrorPage.jsx";
-import './index.css'
+import Homepage from './Views/Homepage.jsx';
+import Career from './Views/Career.jsx';
+import School from './Views/School.jsx';
+import Hobbies from './Views/Hobbies.jsx';
+import Contact from './Views/Contact.jsx';
+import ErrorPage from "./Views/ErrorPage.jsx";
+import '../index.css'
 
 
 const router = createBrowserRouter([
