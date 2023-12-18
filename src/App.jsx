@@ -1,7 +1,7 @@
 import React from 'react';
 import ReactDOM from 'react-dom/client';
 import { createBrowserRouter, RouterProvider } from 'react-router-dom';
-import BoilerPlate from './Modules/BoilerPlate.jsx';
+import SiteMaster from './Modules/SiteMaster.jsx';
 import Homepage from './Views/Homepage.jsx';
 import Career from './Views/Career.jsx';
 import School from './Views/School.jsx';
@@ -14,7 +14,7 @@ import '../index.css'
 const router = createBrowserRouter([
     {
         path: "/",
-        element: <BoilerPlate />,
+        element: <SiteMaster />,
         children: [
             { index: true, element: <Homepage /> },
             { path: 'career', element: <Career /> },
